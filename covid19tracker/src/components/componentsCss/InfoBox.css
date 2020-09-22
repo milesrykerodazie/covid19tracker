@@ -1,0 +1,54 @@
+ .infoBox {
+    flex: 1;
+    cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+    margin-right : 10px;
+} 
+
+.infoBox_title {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+@media screen and (max-width : 450px) {
+/* Styles */
+.infoBox_title, .infoBox_cases, .infoBox_total {
+  font-weight: bold;
+  font-size: 15px;
+}
+}
+
+.infoBox_cases {
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.infoBox_total {
+    color: 6c757d;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+}
+.InfoBox--selected {
+    border-top: 10px solid greenyellow;
+}
+.infoBox--red {
+    border-color:red;
+}
+.infoBox--yellow {
+    border-color: #ff4d4d;
+}
+
+.infoBox__red {
+    color: red;
+}
+.infoBox__yellow {
+    color: #ff4d4d;
+}
+.infoBox__green {
+    color: green;
+}
